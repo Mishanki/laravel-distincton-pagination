@@ -29,11 +29,12 @@
   },
   "autoload": {
     "psr-4": {
-      "denis660\\Centrifugo\\": "src/"
+      "Larahook\\DistinctOnPagination\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
+      "Tests\\": "tests/"
     }
   },
   "extra": {
