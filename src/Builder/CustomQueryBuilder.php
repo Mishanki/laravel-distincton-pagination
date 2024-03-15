@@ -4,6 +4,7 @@ namespace Larahook\DistinctOnPagination\Builder;
 
 use Illuminate\Database\Query\Builder;
 use Illuminate\Database\Query\Expression;
+use Illuminate\Database\Query\Grammars\Grammar;
 use Illuminate\Support\HigherOrderTapProxy;
 
 class CustomQueryBuilder extends Builder
@@ -50,8 +51,17 @@ class CustomQueryBuilder extends Builder
         return tap($this->clone(), static function ($clone) {
             if (\is_array($clone->distinct) && \count($clone->distinct) > 1) {
                 $fields = $clone->distinct;
+                $implodeFields = [];
+                foreach ($fields as $field) {
+                    if (is_object($field)) {
+                        $field = $field->getValue(new Grammar());
+                    }
+
+                    $implodeFields[] = $field;
+                }
+
                 $clone->distinct = [];
-                $clone->distinct[] = \DB::raw('concat('.implode(',', $fields).')');
+                $clone->distinct[] = \DB::raw('concat('.implode(',', $implodeFields).')');
             }
         });
     }
