@@ -1,6 +1,6 @@
 <?php
 
-namespace Builder;
+namespace Larahook\DistinctOnPagination\Builder;
 
 use Illuminate\Database\Query\Builder;
 use Illuminate\Database\Query\Expression;
