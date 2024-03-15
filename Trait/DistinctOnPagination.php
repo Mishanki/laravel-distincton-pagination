@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Traits\Orm;
+namespace Trait;
 
-use App\Helper\Db\CustomQueryBuilder;
+use Builder\CustomQueryBuilder;
 use Illuminate\Database\Query\Builder as QueryBuilder;
 
-trait CustomPagination
+trait DistinctOnPagination
 {
     /**
      * @return QueryBuilder

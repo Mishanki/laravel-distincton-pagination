@@ -15,11 +15,11 @@
       "email": "mishanki@yandex.ru"
     }
   ],
-  "homepage": "https://github.com/Mishanki/distinct-on-pagination",
+  "homepage": "https://github.com/Mishanki/laravel-distinctOn-pagination",
   "support": {
     "email": "mishanki@yandex.ru",
-    "issues": "https://github.com/Mishanki/distinct-on-pagination/issues",
-    "source": "https://github.com/Mishanki/distinct-on-pagination"
+    "issues": "https://github.com/Mishanki/laravel-distinctOn-pagination/issues",
+    "source": "https://github.com/Mishanki/laravel-distinctOn-pagination"
   },
   "require": {
     "php": "^7.4|^8.0",

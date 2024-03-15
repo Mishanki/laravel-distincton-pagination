@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Helper\Db;
+namespace Builder;
 
 use Illuminate\Database\Query\Builder;
 use Illuminate\Database\Query\Expression;
@@ -29,7 +29,7 @@ class CustomQueryBuilder extends Builder
                 ->mergeBindings($clone)
                 ->setAggregate('count', $this->withoutSelectAliases($columns))
                 ->get()->all()
-            ;
+                ;
         }
 
         $without = $this->unions ? ['orders', 'limit', 'offset'] : ['columns', 'orders', 'limit', 'offset'];
@@ -39,7 +39,7 @@ class CustomQueryBuilder extends Builder
             ->concatDistinct()
             ->setAggregate('count', $this->withoutSelectAliases($columns))
             ->get()->all()
-        ;
+            ;
     }
 
     /**
