@@ -1,0 +1,50 @@
+{
+  "name": "larahook/distinct-on-pagination",
+  "type": "library",
+  "description": "Distinct ON multiple filed pagination",
+  "keywords": [
+    "laravel",
+    "pagination",
+    "multiple",
+    "distinct on"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mikhail Mishankin",
+      "email": "mishanki@yandex.ru"
+    }
+  ],
+  "homepage": "https://github.com/Mishanki/distinct-on-pagination",
+  "support": {
+    "email": "mishanki@yandex.ru",
+    "issues": "https://github.com/Mishanki/distinct-on-pagination/issues",
+    "source": "https://github.com/Mishanki/distinct-on-pagination"
+  },
+  "require": {
+    "php": "^7.4|^8.0",
+    "laravel/framework": "^10.0"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "denis660\\Centrifugo\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
