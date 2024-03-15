@@ -1,6 +1,11 @@
-# Laravel distinct on multiple field pagination
+# Laravel pagination with distinct on (field_a, field_b,...)
 
-### Calc total rows for pgsql query
+### Calc total rows (pgsql)
+
+### Install
+```composer
+composer require larahook/distinct-on-pagination
+```
 
 ### Usage
 
