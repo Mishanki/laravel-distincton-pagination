@@ -40,6 +40,7 @@
   "extra": {
     "laravel": {
       "providers": [
+        "Larahook\\DistinctOnPagination\\DistinctOnPaginationServiceProvider"
       ]
     }
   },
