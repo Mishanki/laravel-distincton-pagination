@@ -30,7 +30,7 @@ class CustomQueryBuilder extends Builder
                 ->mergeBindings($clone)
                 ->setAggregate('count', $this->withoutSelectAliases($columns))
                 ->get()->all()
-                ;
+            ;
         }
 
         $without = $this->unions ? ['orders', 'limit', 'offset'] : ['columns', 'orders', 'limit', 'offset'];
@@ -40,7 +40,7 @@ class CustomQueryBuilder extends Builder
             ->concatDistinct()
             ->setAggregate('count', $this->withoutSelectAliases($columns))
             ->get()->all()
-            ;
+        ;
     }
 
     /**
@@ -54,7 +54,7 @@ class CustomQueryBuilder extends Builder
                 $fields = $clone->distinct;
                 $implodeFields = [];
                 foreach ($fields as $field) {
-                    if (is_object($field)) {
+                    if (\is_object($field)) {
                         $field = $field->getValue(new Grammar());
                     }
 

@@ -2,8 +2,8 @@
 
 namespace Larahook\DistinctOnPagination\Trait;
 
-use Larahook\DistinctOnPagination\Builder\CustomQueryBuilder;
 use Illuminate\Database\Query\Builder as QueryBuilder;
+use Larahook\DistinctOnPagination\Builder\CustomQueryBuilder;
 
 trait DistinctOnPagination
 {

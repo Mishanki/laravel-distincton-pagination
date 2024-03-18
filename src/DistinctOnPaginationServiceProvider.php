@@ -13,14 +13,12 @@ class DistinctOnPaginationServiceProvider extends ServiceProvider
 
     /**
      * Bootstrap the application events.
-     *
-     * @return void
      */
     public function boot()
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../config/distincton.php' => config_path('distincton.php'),
+                __DIR__.'/../config/distincton.php' => config_path('distincton.php'),
             ], 'config');
         }
     }
