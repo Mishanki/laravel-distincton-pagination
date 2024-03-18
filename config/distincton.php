@@ -3,7 +3,7 @@
 return [
     /*
      * Concat delimiter
-     * @example concat(field_a, 'delimiter', field_b,...)
+     * @example count(distinct concat(field_a, '|', field_b, '|', field_c,...))
      */
     'delimiter' => '|',
 ];
