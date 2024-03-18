@@ -50,6 +50,7 @@ class CustomQueryBuilder extends Builder
     {
         return tap($this->clone(), static function ($clone) {
             if (\is_array($clone->distinct) && \count($clone->distinct) > 1) {
+                $delimiter = config('distincton.delimiter');
                 $fields = $clone->distinct;
                 $implodeFields = [];
                 foreach ($fields as $field) {
@@ -58,6 +59,9 @@ class CustomQueryBuilder extends Builder
                     }
 
                     $implodeFields[] = $field;
+                    if ($delimiter) {
+                        $implodeFields[] = '\''.$delimiter.'\'';
+                    }
                 }
 
                 $clone->distinct = [];
