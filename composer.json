@@ -1,53 +1,55 @@
 {
-  "name": "larahook/distinct-on-pagination",
-  "type": "library",
-  "description": "Distinct ON multiple filed pagination",
-  "keywords": [
-    "laravel",
-    "pagination",
-    "multiple",
-    "distinct on"
-  ],
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Mikhail Mishankin",
-      "email": "mishanki@yandex.ru"
-    }
-  ],
-  "homepage": "https://github.com/Mishanki/laravel-distinctOn-pagination",
-  "support": {
-    "email": "mishanki@yandex.ru",
-    "issues": "https://github.com/Mishanki/laravel-distinctOn-pagination/issues",
-    "source": "https://github.com/Mishanki/laravel-distinctOn-pagination"
-  },
-  "require": {
-    "php": "8.0",
-    "laravel/framework": "^10.0"
-  },
-  "require-dev": {
-    "friendsofphp/php-cs-fixer": "^3.51"
-  },
-  "autoload": {
-    "psr-4": {
-      "Larahook\\DistinctOnPagination\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Tests\\": "tests/"
-    }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Larahook\\DistinctOnPagination\\DistinctOnPaginationServiceProvider"
-      ]
-    }
-  },
-  "config": {
-    "sort-packages": true
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+    "name": "larahook/distinct-on-pagination",
+    "type": "library",
+    "description": "Distinct ON multiple filed pagination",
+    "keywords": [
+        "laravel",
+        "pagination",
+        "multiple",
+        "distinct on"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mikhail Mishankin",
+            "email": "mishanki@yandex.ru"
+        }
+    ],
+    "homepage": "https://github.com/Mishanki/laravel-distinctOn-pagination",
+    "support": {
+        "email": "mishanki@yandex.ru",
+        "issues": "https://github.com/Mishanki/laravel-distinctOn-pagination/issues",
+        "source": "https://github.com/Mishanki/laravel-distinctOn-pagination"
+    },
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^10.0",
+        "marcocesarato/php-conventional-changelog": "^1.17"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.51"
+    },
+    "autoload": {
+        "psr-4": {
+            "Larahook\\DistinctOnPagination\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Larahook\\DistinctOnPagination\\DistinctOnPaginationServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "version": "1.0.8"
 }
