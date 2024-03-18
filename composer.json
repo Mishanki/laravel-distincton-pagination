@@ -1,12 +1,14 @@
 {
     "name": "larahook/distinct-on-pagination",
     "type": "library",
-    "description": "Distinct ON multiple filed pagination",
+    "description": "ORM ->distinct(field_a, field_b,...) with pagination",
     "keywords": [
         "laravel",
         "pagination",
         "multiple",
-        "distinct on"
+        "distinct on",
+        "orm",
+        "total count"
     ],
     "license": "MIT",
     "authors": [
