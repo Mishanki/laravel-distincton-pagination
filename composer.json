@@ -1,7 +1,7 @@
 {
     "name": "larahook/distinct-on-pagination",
     "type": "library",
-    "description": "ORM Multiple distinct(['field_a', 'field_b']) with paginate()",
+    "description": "ORM Multiple distinct() with paginate()",
     "keywords": [
         "laravel",
         "pagination",
