@@ -17,15 +17,15 @@
             "email": "mishanki@yandex.ru"
         }
     ],
-    "homepage": "https://github.com/Mishanki/laravel-distinctOn-pagination",
+    "homepage": "https://github.com/Mishanki/laravel-distincton-pagination",
     "support": {
         "email": "mishanki@yandex.ru",
-        "issues": "https://github.com/Mishanki/laravel-distinctOn-pagination/issues",
-        "source": "https://github.com/Mishanki/laravel-distinctOn-pagination"
+        "issues": "https://github.com/Mishanki/laravel-distincton-pagination/issues",
+        "source": "https://github.com/Mishanki/laravel-distincton-pagination"
     },
     "require": {
         "php": "^8.0",
-        "laravel/framework": "^10.0",
+        "laravel/framework": "^10.0|^11.0",
         "marcocesarato/php-conventional-changelog": "^1.17"
     },
     "require-dev": {
