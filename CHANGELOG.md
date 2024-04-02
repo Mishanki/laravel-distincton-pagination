@@ -4,6 +4,11 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [1.1.3](https://github.com/Mishanki/laravel-distinctOn-pagination/compare/0.0.0...v1.1.3) (2024-04-02)
+
+
+---
+
 ## [1.0.8](https://github.com/Mishanki/laravel-distinctOn-pagination/compare/015ea8bd98292d6a7b4db2d99245af8ba07e8558...v1.0.0) (2024-03-18)
 
 ### Features
